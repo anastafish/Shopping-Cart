@@ -22,12 +22,10 @@ function App() {
 
   return (
     <BrowserRouter>
-    <HashRouter basename="/">
       <Routes>
         <Route path={'/'} element={<Home cartPop={cartPop} setCartPop={setCartPop} cartElements={cartElements} cart={cart} setCart={setCart}/>}></Route>
         <Route path={'/shop'} element={<Shop cartPop={cartPop} setCartPop={setCartPop} cartElements={cartElements} cart={cart} setCart={setCart}/>}></Route>
       </Routes>
-      </HashRouter>
     </BrowserRouter>
   )
 }
