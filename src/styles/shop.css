@@ -1,0 +1,30 @@
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cart-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: fit-content;
+    position: absolute;
+    right: 25px;
+    top: 90px;
+    padding: 10px;
+}
+
+.shop-content{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-container{
+    padding: 30px;
+}
