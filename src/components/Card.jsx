@@ -12,8 +12,12 @@ export default function Card(props){
         obj.push(pcs)
         props.setCart(prevCart => {
             return [...prevCart, obj]
-        })        
-    }
+            })     
+       
+        }         
+
+                     
+                  
 
     function increase(){
         setPcs(prevPcs => prevPcs+1)

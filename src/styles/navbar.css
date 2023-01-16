@@ -9,11 +9,58 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 95%;
 }
 
-.navbar-container h2,h1{
-    color: #ffffff;
+@media (max-width:600px){
+    .navbar-container{
+        justify-content: right;
+        flex-direction: column;
+    }
+
+    .nav-btn{
+        width: 20%;
+        padding: 0;
+    }
+
+    .nav-btn a{
+        width: 50%;
+    }
+
+    .nav-btn img{
+        width: 50%;
+    }
+
+    .nav-btn button{
+        font-size: 10px;
+    }
+
+    .store-name{
+        width: 40%;
+        padding: 0;
+    }
+
+    .nav-right{
+        gap: 0;
+    }
 }
+
+.navbar-container .nav-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.navbar-container .nav-btn:hover{
+    background-color: greenyellow;
+}
+
 
 a{
     text-decoration: none;
@@ -28,13 +75,56 @@ a:visited{
     display: flex;
     align-items:center ;
     justify-content: end;
-    gap: 70px;
+    gap: 1.5rem;
 }
 
 .nav-right button{
-    color: #ffffff;
+    color: black;
     background-color: transparent;
-    border: none;
     font-size: 25px;
     cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
 }
+
+.nav-right button:hover{
+    background-color: greenyellow;
+}
+
+.nav-btn h2{
+    color: black;
+    font-size: 1rem;
+}
+
+.store-name{
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 2rem;
+    border: 1px solid #ffffff;
+    user-select: none;
+}
+
+.nav-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 20%;
+    height: 50%;
+}
+
+.nav-btn img{
+    width: 30px;
+}
+
+.nav-btn a{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

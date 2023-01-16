@@ -8,6 +8,14 @@ body{
     background-repeat: no-repeat;
 }
 
+@media (max-width:600px){
+    #root{    
+        background-image: url(../../images/background.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
 .home-content{
     height: 100%;
     display: flex;
@@ -61,4 +69,39 @@ body{
     width: fit-content;
     border-radius: 10px;
     position: absolute;
+}
+
+.cart-Container h1{
+    color: black;
+}
+
+.cart-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart-Container h1{
+    text-align: center;
+}
+
+.cart-Container p{
+    font-size: 20px;
+}
+
+.cart-shop{
+    border: 1px solid black;
+    background-color: #388C44;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 35px;
+}
+
+.cart-shop:hover{
+    background-color: antiquewhite;
+}
+
+.welcome{
+    font-size: 50px;
 }

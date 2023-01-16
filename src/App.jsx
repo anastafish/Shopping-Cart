@@ -6,7 +6,6 @@ import Shop from "./components/Shop";
 
 function App() {
   const [cart, setCart] = useState([])
-  console.log(cart)
   const [cartPop, setCartPop] = useState(false)
   const cartElements = cart.map(item => {
       return(
@@ -20,6 +19,7 @@ function App() {
           </div>
       )
   })
+
   return (
     <BrowserRouter>
       <Routes>
@@ -31,3 +31,4 @@ function App() {
 }
 
 export default App
+

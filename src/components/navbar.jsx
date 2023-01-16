@@ -16,11 +16,26 @@ export default function Navbar(props){
     })
         return(
         <nav className="navbar-container">           
-            <h1>Anas Store</h1>
+            <h1 className='store-name'>Tech Store</h1>
             <div className="nav-right">
-                <div><h2><a href="/">Home</a></h2></div>
-                <div><h2><a href="/shop">Shop</a></h2></div>
-                <div><button onClick={() => props.setCartPop(prev => !prev)}>Cart</button></div>                
+            <div className='nav-btn'>
+                <a href="/">
+                        <h2>Home</h2>
+                        <img src="../../images/home.svg" alt="" />
+                </a>
+                </div>
+                <div className='nav-btn'>
+                <a href="/shop">                    
+                        <h2>Shop</h2>
+                        <img src="../../images/shop.svg" alt="" />                        
+                </a>
+                </div>
+                <div className='nav-btn'>
+                    <button onClick={() => props.setCartPop(prev => !prev)}>
+                        Cart
+                        <img src="../../images/cart.svg" alt="" />
+                        </button>                    
+                    </div>                
             </div>
         </nav>
     )}

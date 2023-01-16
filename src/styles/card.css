@@ -11,6 +11,19 @@
     padding: 10px;
 }
 
+@media (max-width:600px){
+    .card-container{
+        width: 50%;
+    }
+    .card-container img{
+        width: 50%;
+    }
+
+    input{
+        width: 70%;
+    }
+}
+
 .card-btns{
     display: flex;
     align-items: center;
@@ -26,8 +39,7 @@
 }
 
 .card-container img{
-    width: 200px;
-    height: 200px;
+    width: 70%;
 }
 
 .decrease{
