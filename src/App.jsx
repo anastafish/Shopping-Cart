@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import { useState } from 'react'
 import './App.css'
 import Home from "./components/Home";
@@ -22,10 +22,12 @@ function App() {
 
   return (
     <BrowserRouter>
+    <HashRouter basename="/">
       <Routes>
         <Route path={'/'} element={<Home cartPop={cartPop} setCartPop={setCartPop} cartElements={cartElements} cart={cart} setCart={setCart}/>}></Route>
         <Route path={'/shop'} element={<Shop cartPop={cartPop} setCartPop={setCartPop} cartElements={cartElements} cart={cart} setCart={setCart}/>}></Route>
       </Routes>
+      </HashRouter>
     </BrowserRouter>
   )
 }
